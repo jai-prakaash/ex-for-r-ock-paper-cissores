@@ -1,45 +1,47 @@
-
-function shake(){
-    
-    const nom3= Math.random();
-console.log(nom3); 
 let result = "";
+let move = "";
+let win = "";
+let lose = "";
+let tie = "";
 
+function shake() {
+  const nom3 = Math.random();
+  console.log(nom3);
 
-    if (nom3 < 1/3) {document.querySelector('.result').innerHTML = 'Rock';;
-        result= 'Rock';
-        console.log('Rock');
-        
-    }   else if (nom3 > 1/3 && nom3 < 2/3 ){
-   
-    document.querySelector('.result').innerHTML = 'Paper';
-    result = 'Paper';;
+  if (nom3 < 1 / 3) {
+    result = "Rock";
+  } else if (nom3 > 1 / 3 && nom3 < 2 / 3) {
+    result = "Paper";
+  } else {
+    result = "Scissors";
+  }
 
-    console.log('Paper');
-    
-        } else { document.querySelector('.result').innerHTML = 'Scissors';
-            result = 'Scissors';
-            console.log('Scissors');        
+  if (result == "Rock") {
+    document.querySelector(".who").innerHTML = `Computer choose ${result}`;
+  } else if (result == "Paper") {
+    document.querySelector(".who").innerHTML = `Computer choose ${result}`;
+  } else {
+    document.querySelector(".who").innerHTML = `Computer choose ${result}`;
+  }
 }
 
-console.log(result);
+function rock() {
+  document.querySelector(".move").innerHTML = `you pick Rock`;
+  move = "Rock";
+  console.log(move);
+  console.log(result);
+}
 
- 
- if (result == 'Rock') { document.querySelector('.who').innerHTML = `you pick mover computer choose ${result}`;
+function paper() {
+  document.querySelector(".move").innerHTML = `you pick Paper`;
+  move = "Paper";
+  console.log(move);
+  console.log(result);
+}
 
- } else if (result == 'Paper') {document.querySelector('.who').innerHTML = `you pick mover computer choose ${result}`;}
- 
- else {document.querySelector('.who').innerHTML = `you pick mover computer choose ${result}`; }
-
-
-
-
-} ;
-
-
-
-
-
-
-
-
+function scissors() {
+  document.querySelector(".move").innerHTML = `you pick Scissors`;
+  move = "Scissors";
+  console.log(move);
+  console.log(result);
+}
