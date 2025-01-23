@@ -7,21 +7,30 @@
 </head>
 <body>
 
-   <button onclick="shake(); rock(); " > Rock </button>
+   <button onclick="shake(); rock(); updateResult();" > Rock </button>
 
-   <button onclick="shake(); paper();  " > Paper </button>
+   <button onclick="shake(); paper();  updateResult();" > Paper </button>
 
-   <button onclick="shake(); scissors();  " > Scissors</button>
+   <button onclick="shake(); scissors();  updateResult();" > Scissors</button>
 
 <div>
 
-    <p class="move"> </p>
+    <p class="move"> Your Move </p>
 
 
-   <p class="who"> </p>
+   <p class="who"> Computer Move </p>
 
 </div>
- 
+   <div>
+
+    <P class="showScore"> Win 0 Tie 0 Lose 0 </P>
+
+   </div>
+
+
+<button onclick="reset();" > reset score</button>
+
+
    <script src="rpc.js"></script>
 </body>
 </html>
