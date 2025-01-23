@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rock paper cissors  </title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script> 
 </head>
-<body>
+<body class="bg-slate-600 font-semibold font-mono  text-white ">
 
-   <button onclick="shake(); rock(); updateResult();" > Rock </button>
+   <button class="bg-slate-400 rounded pl-1 pr-1 border-1 border-red-500 outline outline-red-500 text-white" onclick="shake(); rock(); updateResult();" > Rock </button>
 
-   <button onclick="shake(); paper();  updateResult();" > Paper </button>
+   <button class="bg-slate-400 rounded pl-1 pr-1 border-1 border-red-500 outline outline-red-500 text-white" onclick="shake(); paper();  updateResult();" > Paper </button>
 
-   <button onclick="shake(); scissors();  updateResult();" > Scissors</button>
+   <button class="bg-slate-400 rounded pl-1 pr-1 border-1 border-red-500 outline outline-red-500 text-white" onclick="shake(); scissors();  updateResult();" > Scissors</button>
 
 <div>
 
-    <p class="move"> Your Move </p>
+    <p class="move "> Your Move </p>
 
 
    <p class="who"> Computer Move </p>
@@ -30,7 +31,7 @@
    </div>
 
 
-<button onclick="reset();" > reset score</button>
+<button onclick="reset();" > Reset Score</button>
 
 
    <script src="rpc.js"></script>
