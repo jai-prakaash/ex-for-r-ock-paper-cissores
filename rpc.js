@@ -5,6 +5,16 @@ let lose = 0;
 let tie = 0;
 let rounds = 0;
 
+
+let Score = {
+  win: 0,
+  lose: 0,
+  tie: 0,
+  rounds: 0
+};
+
+
+
 function shake() {
   const nom3 = Math.random();
   console.log(nom3);
@@ -58,6 +68,12 @@ function updateResult() {
 
     rounds = win + lose + tie;
 
+    Score.win = win;
+    Score.lose = lose;
+    Score.tie = tie;
+    Score.rounds = rounds;
+    
+
     document.querySelector(
       ".showScore"
     ).innerHTML = `Win ${win} Tie ${tie} Lose ${lose}`;
@@ -70,6 +86,12 @@ function updateResult() {
 
     rounds = win + lose + tie;
 
+  Score.win = win;
+Score.lose = lose;
+Score.tie = tie;
+Score.rounds = rounds;
+
+
     document.querySelector(
       ".showScore"
     ).innerHTML = `Win ${win} Tie ${tie} Lose ${lose}`;
@@ -80,6 +102,12 @@ function updateResult() {
     console.log(`lose= ${lose}`);
 
     rounds = win + lose + tie;
+
+    Score.win = win;
+Score.lose = lose;
+Score.tie = tie;
+Score.rounds = rounds;
+
 
     document.querySelector(
       ".showScore"
@@ -95,6 +123,11 @@ function reset() {
   tie = 0;
   rounds = 0;
 
+  Score.win = win;
+Score.lose = lose;
+Score.tie = tie;
+Score.rounds = rounds;
+
   document.querySelector(".move").innerHTML = `Your Move  `;
   document.querySelector(".who").innerHTML = "ㅤComputer Move";
 
@@ -104,3 +137,8 @@ function reset() {
 
   document.querySelector(".rounds").innerHTML = `Number of rounds 0`;
 }
+
+
+
+
+
