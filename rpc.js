@@ -18,11 +18,11 @@ function shake() {
   }
 
   if (result == "Rock") {
-    document.querySelector(".who").innerHTML = `Computer choose ${result}`;
+    document.querySelector(".who").innerHTML = `ㅤComputer choose ${result}`;
   } else if (result == "Paper") {
-    document.querySelector(".who").innerHTML = `Computer choose ${result}`;
+    document.querySelector(".who").innerHTML = `ㅤComputer choose ${result}`;
   } else {
-    document.querySelector(".who").innerHTML = `Computer choose ${result}`;
+    document.querySelector(".who").innerHTML = `ㅤComputer choose ${result}`;
   }
 }
 
@@ -95,8 +95,8 @@ function reset() {
   tie = 0;
   rounds = 0;
 
-  document.querySelector(".move").innerHTML = `Your Move`;
-  document.querySelector(".who").innerHTML = `Computer Move`;
+  document.querySelector(".move").innerHTML = `Your Move  `;
+  document.querySelector(".who").innerHTML = "ㅤComputer Move";
 
   document.querySelector(
     ".showScore"

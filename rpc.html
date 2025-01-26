@@ -6,7 +6,10 @@
     <title>rock paper cissors  </title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script> 
 </head>
-<body class="bg-slate-600 font-semibold font-mono  text-white ">
+<body class="bg-slate-600 font-semibold font-mono  text-white flex flex-col ">
+
+
+   <div class="  justify-center ml-auto mr-auto md:mt-[10%] mt-[30%] ">
 
    <button class="bg-slate-400 rounded pl-1 pr-1 border-1 border-red-500 outline outline-red-500 text-white" onclick="shake(); rock(); updateResult();" > Rock </button>
 
@@ -14,24 +17,24 @@
 
    <button class="bg-slate-400 rounded pl-1 pr-1 border-1 border-red-500 outline outline-red-500 text-white" onclick="shake(); scissors();  updateResult();" > Scissors</button>
 
-<div>
+   </div>
 
-    <p class="move "> Your Move </p>
+<div class="ml-auto flex mr-auto flex-row md:mt-[5%] mt-[10%]">
 
+    <p class="move "> Your Move</p>
 
-   <p class="who"> Computer Move </p>
+   <p class="who ">ㅤComputer Move </p>
 
 </div>
-   <div>
+   <div class="ml-auto mr-auto md:mt-[3%] mt-[5%]">
 
-    <P class="showScore"> Win 0 Tie 0 Lose 0 </P>
+    <P class="showScore md:mt-[5%] mt-[8%]"> Win 0 Tie 0 Lose 0 </P>
 
-    <p class="rounds"> Number of rounds 0</p>
+    <p class="rounds md:mt-[40%] mt-[15%]"> Number of rounds 0 </p>
 
    </div>
 
-
-<button onclick="reset();" > Reset Score</button>
+<button class=" bg-slate-400 rounded md:w-[10%] w-[50%] mr-auto ml-auto border-1 border-red-500 outline outline-red-500 text-white md:mt-[6%]  mt-[35%]"  onclick="reset();" > Reset Score</button>
 
 
    <script src="rpc.js"></script>
